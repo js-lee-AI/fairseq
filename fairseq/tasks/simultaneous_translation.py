@@ -20,6 +20,8 @@ logger = logging.getLogger(__name__)
 
 
 def check_import(flag):
+    from setproctitle import setproctitle
+    setproctitle("Jungseob-simultaneous-translation")
     if not flag:
         raise ImportError(
             "'examples.simultaneous_translation' is not correctly imported. "
