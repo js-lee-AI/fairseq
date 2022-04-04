@@ -283,6 +283,8 @@ class TranslationTask(FairseqTask):
 
     def __init__(self, cfg: TranslationConfig, src_dict, tgt_dict):
         super().__init__(cfg)
+        from setproctitle import setproctitle
+        setproctitle("Jungseob-fairseq-translation")
         self.src_dict = src_dict
         self.tgt_dict = tgt_dict
 
