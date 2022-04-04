@@ -28,7 +28,7 @@ from fairseq.data import (
 from fairseq.data.indexed_dataset import get_available_dataset_impl
 from fairseq.dataclass import ChoiceEnum, FairseqDataclass
 from fairseq.tasks import FairseqTask, register_task
-
+import torch
 
 EVAL_BLEU_ORDER = 4
 
