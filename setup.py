@@ -222,6 +222,8 @@ def do_setup(package_data):
             "tqdm",
             "bitarray",
            # "torchaudio>=0.8.0",
+            "wandb",
+            "tensorboardX",
         ],
         dependency_links=dependency_links,
         packages=find_packages(
